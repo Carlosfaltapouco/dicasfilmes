@@ -1,0 +1,54 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- navbar  -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href=" {% url 'index' %}">Dicas & filmes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">inicio<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Series</a>
+            <a class="nav-item nav-link" href="#">filmes</a>
+            <a class="nav-item nav-link" href="#">contatos</a>
+        </div>
+    </div>
+</nav>
+
+<!-- titulos -->
+
+<h3 class="text-center fonte-titulo pt-5">Compartilhe suas dicas de filmes e series!</h3>
+
+
+
+<section class="container-fluid bg-light">
+    <div class="row justify-content-center">
+        <!-- card(s) -->
+
+        <article class="card card-largura p-0 m-4 col-12 col-md-3 ">
+            <img src="{% static 'static/img/homem aranha.jpg' %}" class="card-img-top card-posicao-imagem" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Homem aranha</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Carlos</h6>
+                <h6 class="card-subtitle mb-2 text-muted">categoria</h6>
+                <h6 class="card-subtitle mb-2 text-muted">data</h6>
+                <h6 class="card-subtitle mb-2 text-muted">netflix</h6>
+                <p class="card-text"> Gostei do filmes, muitos efeitos especiais, mas poderia ser melhor.</p>
+            </div>
+        </article>
+    </div>
+
+
+</section>
+
+
+
+<p>contato:<a href="mailto:email@frutafruto.com.br">carlosfaltapouco@hotmail.com</a></p>
+
+
+
+
+
+{% endblock %}

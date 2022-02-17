@@ -1,0 +1,25 @@
+card-largura {
+    max-width: 18rem
+}
+
+.imagem-carrossel-um {
+    object-fit: cover;
+    object-position: 0 10%;
+    height: 400px;
+}
+
+.imagem-carrossel-dois {
+    object-fit: cover;
+    object-position: 0 20%;
+    height: 400px;
+}
+
+.fonte-titulo {
+    font-family: 'Pacifico', cursiva;
+}
+
+.card-posicao-imagem {
+    object-fit: cover;
+    object-position: 0%;
+    height: 200px;
+}
